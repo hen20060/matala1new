@@ -45,7 +45,7 @@ def XtimesY( x , y ):
 def sqrt(x,y):
     return (XtimesY(y,1/x))
 
-def colculate(x):
+def calculate(x):
     if(x<=0):
         result=0
     else:
