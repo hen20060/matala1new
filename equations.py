@@ -49,9 +49,6 @@ def colculate(x):
     if(x<=0):
         result=0
     else:
-        e=2.718281828459045
-        result= XtimesY(e, x)*XtimesY(7, x)*XtimesY(x, -1)*sqrt(x, x)
+        result= exponent(x)*XtimesY(7, x)*XtimesY(x, -1)*sqrt(x, x)
         result = float('%0.6f' % result)
     return result
-x = float(input("Enter number: "))
-print(colculate(x))
