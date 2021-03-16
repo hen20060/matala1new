@@ -1,6 +1,6 @@
 def exponent(x):
     result=1
-    for n in range(1,160):
+    for n in range(1,120):
         result = result + helper2(x, n)/helper(n)
     return result
 def helper(n):
@@ -27,7 +27,7 @@ def helper2(x, n):
 def ln(x):
     epsilon = 0.001
     yn=x-1.0
-    yn1=yn + 2*(x-exponent(yn))/(x+exponent(yn))
+    yn1=yn + 2*((x-exponent(yn))/(x+exponent(yn)))
     while abs1(yn-yn1)>epsilon:
         yn=yn1
         yn1=yn + 2*(x-exponent(yn))/(x+exponent(yn))
