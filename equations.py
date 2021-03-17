@@ -24,7 +24,7 @@ def helper2(x, n):
         temp = temp * x
     return temp
 
-def ln(x):
+def Ln(x):
     epsilon = 0.001
     yn=x-1.0
     yn1=yn + 2*((x-exponent(yn))/(x+exponent(yn)))
@@ -35,7 +35,7 @@ def ln(x):
 
 def XtimesY( x , y ):    
     if x>0:      
-        lnx = ln(x)
+        lnx = Ln(x)
         power=lnx*y
         result= exponent(power)
     else:
